@@ -11,7 +11,7 @@ const config: Config = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'], // Configuración adicional
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'], // Extensiones reconocidas
   testPathIgnorePatterns: ['/node_modules/', '/dist/'], // Ignorar pruebas en estos directorios
-  preset: 'ts-jest', // Asegúrate de que `ts-jest` esté configurado
+  preset: 'ts-jest', 
 };
 
 export default config;
