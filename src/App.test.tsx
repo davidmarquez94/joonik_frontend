@@ -57,14 +57,14 @@ describe('App Component', () => {
     render(<App />);
 
     // Espera a que las ubicaciones se rendericen
-    await waitFor(() => screen.getByText(/Sede 1/i));
+    await waitFor(() => screen.getByText(/Colombia/i));
 
     // Verifica que las ubicaciones se muestran en el documento
-    expect(screen.getByText(/Sede 1/i)).toBeInTheDocument();
-    expect(screen.getByText(/Sede 2/i)).toBeInTheDocument();
+    expect(screen.getByText(/Colombia/i)).toBeInTheDocument();
+    expect(screen.getByText(/Mexico/i)).toBeInTheDocument();
 
     // Verifica que la imagen se carga correctamente
-    expect(screen.getByAltText(/Sede 1/i)).toHaveAttribute('src', 'https://example.com/image1.jpg');
-    expect(screen.getByAltText(/Sede 2/i)).toHaveAttribute('src', 'https://example.com/image2.jpg');
+    expect(screen.getByAltText(/Colombia/i)).toHaveAttribute('src', 'https://example.com/image1.jpg');
+    expect(screen.getByAltText(/Mexico/i)).toHaveAttribute('src', 'https://example.com/image2.jpg');
   });
 });
