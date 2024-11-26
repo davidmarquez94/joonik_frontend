@@ -6,6 +6,10 @@
   ],
   "compilerOptions": {
     "jsx": "react-jsx",
-    "types": ["jest", "node"]
+    "types": ["jest", "node", "@testing-library/jest-dom"],
+    "module": "commonjs",
+    "target": "es6",
+    "esModuleInterop": true,
+    "strict": true
   }
 }
